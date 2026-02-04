@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>Valentine?</title>
+<style>
+body {
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #ffe6eb;
+font-family: Arial, sans-serif;
+}
+.card {
+background: white;
+padding: 40px;
+border-radius: 20px;
+text-align: center;
+box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+h1 {
+color: #ff4d6d;
+margin-bottom: 30px;
+}
+button {
+font-size: 18px;
+padding: 12px 24px;
+border-radius: 10px;
+border: none;
+cursor: pointer;
+margin: 10px;
+}
+#yes {
+background: #ff4d6d;
+color: white;
+}
+#no {
+background: #ccc;
+position: absolute;
+}
+
+</style>
+</head>
+<body>
+<div class="card">
+<h1>Will you be my Valentine, Sonnal ? 💖</h1>
+<button id="yes" onclick="goYes()">Yes 💘</button>
+<button id="no">No ‍♂️</button>
+</div>
+<script>
+const noBtn = document.getElementById('no');
+document.addEventListener('mousemove', (e) => {
+const rect = noBtn.getBoundingClientRect();
+const distance = Math.hypot(
+e.clientX - rect.left,
+e.clientY - rect.top
+);
+if (distance < 100) {
+noBtn.style.left = Math.random() * (window.innerWidth - 100) +
+
+"px";
+
+noBtn.style.top = Math.random() * (window.innerHeight - 50) +
+
+"px";
+}
+});
+function goYes() {
+window.location.href = "yes.html";
+}
+</script>
+</body>
+</html>

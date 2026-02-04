@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>YAY!</title>
+<style>
+body {
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #ffccd5;
+font-family: Arial, sans-serif;
+text-align: center;
+}
+h1 {
+font-size: 48px;
+color: #ff4d6d;
+}
+p {
+font-size: 24px;
+}
+</style>
+</head>
+<body>
+<div>
+<h1>YAYYYY 💖🥳</h1>
+<p>You just made my Valentine’s Day ❤️</p>
+<p>🧸🌹💘</p>
+</div>
+</body>
+</html>
